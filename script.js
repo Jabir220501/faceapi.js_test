@@ -8,10 +8,10 @@ async function startWebcamAndRegister() {
 // Loads models required for face recognition and starts webcam
 async function loadModelsAndStartWebcam() {
   await Promise.all([
-    // Load face recognition models from specified directory
-    faceapi.nets.ssdMobilenetv1.loadFromUri("../models"),
-    faceapi.nets.faceLandmark68Net.loadFromUri("../models"),
-    faceapi.nets.faceRecognitionNet.loadFromUri("../models"),
+    // Load face recognition models
+    faceapi.nets.ssdMobilenetv1.loadFromUri("./models"),
+    faceapi.nets.faceLandmark68Net.loadFromUri("./models"),
+    faceapi.nets.faceRecognitionNet.loadFromUri("./models"),
   ]);
 
   startWebcam(); // Start webcam after loading models
