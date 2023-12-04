@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Face Registration and Detection</title>
+  <script defer src="../face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Face Registration and Login</h1>
+  <input type="text" id="nameInput" placeholder="Enter your name">
+  <button onclick="registerFace()">Register Face</button>
+  <br><br>
+  <video id="video" width="600" height="450" autoplay></video>
+  <canvas id="overlay" width="600" height="450"></canvas>
+  <br><br>
+  <h2>Login</h2>
+  <!-- <input type="text" id="loginNameInput" placeholder="Enter your name"> -->
+  <button onclick="matchFace()">Login</button>
+  <div id="loginResult"></div>
+  <div id="registeredNames"></div>
+  </body>
+</html>
